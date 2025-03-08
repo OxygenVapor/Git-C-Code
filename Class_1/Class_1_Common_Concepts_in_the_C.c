@@ -79,10 +79,10 @@
 //    d = 十进制字符
 //   \ddd = 八进制字符
 //   \xdd = 十六进制字符
-int main()
-{
-	//printf("abcdef\n");
-	//printf("%s\n", "\130\x52"); //输出XR
-	printf("%zd\n", strlen("\114"));
-	return 0;
-}
+//int main()
+//{
+//	//printf("abcdef\n");
+//	//printf("%s\n", "\130\x52"); //输出XR
+//	printf("%zd\n", strlen("\114"));
+//	return 0;
+//}
