@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Workspace\\C\\Files\\git-c-code\\Class_1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3CE6D21C-C462-416A-8BFE-4D2581E30A41}|Class_1.vcxproj|D:\\Workspace\\C\\Files\\git-c-code\\Class_1\\Class_1_Common_Concepts_in_the_C.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3CE6D21C-C462-416A-8BFE-4D2581E30A41}|Class_1.vcxproj|solutionrelative:Class_1_Common_Concepts_in_the_C.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Class_1_Common_Concepts_in_the_C.c",
+              "DocumentMoniker": "D:\\Workspace\\C\\Files\\git-c-code\\Class_1\\Class_1_Common_Concepts_in_the_C.c",
+              "RelativeDocumentMoniker": "Class_1_Common_Concepts_in_the_C.c",
+              "ToolTip": "D:\\Workspace\\C\\Files\\git-c-code\\Class_1\\Class_1_Common_Concepts_in_the_C.c",
+              "RelativeToolTip": "Class_1_Common_Concepts_in_the_C.c",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAEEAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-03-05T01:39:27.502Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
