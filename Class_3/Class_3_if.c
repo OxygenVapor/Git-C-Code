@@ -76,16 +76,79 @@
 //	return 0;
 //}
 
+//int main()
+//{
+//	int year = 0;
+//    scanf("%d", &year);
+//	if (year > 0)
+//		if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
+//			printf("闰年\n");
+//		else
+//			printf("非闰年\n");
+//    else
+//        printf("非法输入\n");
+//	return 0;
+//}
+
+//int main()
+//{
+//	int day = 0;
+//    scanf("%d", &day);
+//	if(day >= 1 && day <= 7)
+//		switch (day)
+//        {
+//        case 1:
+//            printf("周一\n");
+//            break;
+//        case 2:
+//            printf("周二\n");
+//            break;
+//        case 3:
+//            printf("周三\n");
+//            break;
+//        case 4:
+//            printf("周四\n");
+//            break;
+//        case 5:
+//            printf("周五\n");
+//            break;
+//        case 6:
+//            printf("周六\n");
+//            break;
+//        case 7:
+//            printf("周日\n");
+//            break;
+//        }
+//    else
+//        printf("非法输入\n");
+//	return 0;
+//}
+
+
+//while(条件)
+//{
+//    循环体
+//}
+
+//int main()
+//{
+//    int i = 1;
+//	scanf("%d", &i);
+//	while (i >=1 && i <= 10)
+//		printf("%d\n", i++);
+//        
+//	return 0;
+//}
+
+//输入一个正的整数，逆序打印这个整数的每一位数
 int main()
 {
-	int year = 0;
-    scanf("%d", &year);
-	if (year > 0)
-		if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
-			printf("闰年\n");
-		else
-			printf("非闰年\n");
-    else
-        printf("非法输入\n");
+	int a = 0;
+	scanf("%d", &a);
+	while (a > 0)
+	{
+		printf("%d", a % 10);
+		a = a / 10;
+	}
 	return 0;
 }
