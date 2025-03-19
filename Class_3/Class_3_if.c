@@ -165,6 +165,7 @@
 //    return 0;
 //}
 
+
 //写代码将三个整数数按从大到小输出
 //例如：
 //
@@ -172,31 +173,98 @@
 //
 //输出：3 2 1
 
-#include <stdio.h>
-int main()
+//int main()
+//{
+//    int a = 2;
+//    int b = 3;
+//    int c = 1;
+//    scanf("%d%d%d", &a, &b, &c);
+//    if (a < b)
+//    {
+//        int tmp = a;
+//        a = b;
+//        b = tmp;
+//    }
+//    if (a < c)
+//    {
+//        int tmp = a;
+//        a = c;
+//        c = tmp;
+//    }
+//    if (b < c)
+//    {
+//        int tmp = b;
+//        b = c;
+//        c = tmp;
+//    }
+//    printf("a=%d b=%d c=%d\n", a, b, c);
+//    return 0;
+//}
+
+//int main()
+//{
+//	int i = 0;
+//	int a = 0;
+//	scanf("%d", &a);
+//	do
+//	{
+//		i++;
+//		a = a / 10;
+//	} while (a != 0);// 判断表达式是否为真，为真继续循环，为假则结束循环
+//	printf("%d\n", i);
+//	return 0;
+//}
+
+
+//break与continue
+
+//int main()
+//{
+//	int a = 0;
+//	while (a < 10)
+//	{
+//		a++;
+//		if (a == 5)
+//			continue;
+//		printf("%d ", a);
+//	}
+//	return 0;
+//}
+
+//int main()
+//{
+//	int i = 0;
+//	for (i = 0; i < 10; i++;) //先执行完循环语句再执行表达式3
+//	{
+//		if (i == 5)
+//		{
+//			continue;
+//		}
+//		printf("%d ", i);
+//	}
+//}
+
+
+int  main()
 {
-    int a = 2;
-    int b = 3;
-    int c = 1;
-    scanf("%d%d%d", &a, &b, &c);
-    if (a < b)
-    {
-        int tmp = a;
-        a = b;
-        b = tmp;
-    }
-    if (a < c)
-    {
-        int tmp = a;
-        a = c;
-        c = tmp;
-    }
-    if (b < c)
-    {
-        int tmp = b;
-        b = c;
-        c = tmp;
-    }
-    printf("a=%d b=%d c=%d\n", a, b, c);
-    return 0;
+	int i = 0;
+	for (i = 100; i <= 200; i++)
+	{
+		int flag = 1;
+		int a = 0;
+		for (a = 2; a < i; a++)
+		{
+			if (i % a == 0) //如果判断条件结果为真，则执行语句
+			{
+				flag = 0;
+				break;  //打断并跳出循环
+			}
+		}
+		if (flag == 1)
+		{
+			printf("%d ", i);
+		}
+	}
+
+	return 0;
 }
