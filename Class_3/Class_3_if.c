@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
+#include <math.h>
 
 //int main()
 //{
@@ -245,16 +245,72 @@
 //}
 
 
+
+// 求 100 ~ 200 之间的素数
+
+//int  main()
+//{
+//	int i = 0;
+//	for (i = 100; i <= 200; i++)
+//	{
+//		int flag = 1;
+//		int a = 0;
+//		// for (a = 2; a < i; a++)
+//		for (a = 2; a < i; a++)
+//		{
+//			if (i % a == 0) //如果判断语句结果为真，则执行语句
+//			{
+//				flag = 0;
+//				break;  //打断并跳出循环
+//			}
+//		}
+//		if (flag == 1)
+//		{
+//			printf("%d ", i);
+//		}
+//	}
+//
+//	return 0;
+//}
+
+// 优化.1
+//int  main()
+//{
+//	int i = 0;
+//	for (i = 101; i <= 200; i+=2) //求素数中，偶数不可能是素数，所以可以排除掉偶数项，进行算法优化
+//	{
+//		int flag = 1;
+//		int a = 0;
+//		// for (a = 2; a < i; a++)
+//		for (a = 2; a < i; a++) 
+//		{
+//			if (i % a == 0) //如果判断语句结果为真，则执行语句
+//			{
+//				flag = 0;
+//				break;  //打断并跳出循环
+//			}
+//		}
+//		if (flag == 1)
+//		{
+//			printf("%d ", i);
+//		}
+//	}
+//
+//	return 0;
+//}
+
+// 优化.2
 int  main()
 {
 	int i = 0;
-	for (i = 100; i <= 200; i++)
+	for (i = 101; i <= 200; i+=2)
 	{
 		int flag = 1;
 		int a = 0;
-		for (a = 2; a < i; a++)
+		// for (a = 2; a < i; a++)
+		for (a = 2; a <= sqrt(i); a++) 
 		{
-			if (i % a == 0) //如果判断条件结果为真，则执行语句
+			if (i % a == 0) //如果判断语句结果为真，则执行语句
 			{
 				flag = 0;
 				break;  //打断并跳出循环
