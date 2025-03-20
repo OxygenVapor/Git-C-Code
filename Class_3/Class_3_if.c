@@ -300,27 +300,73 @@
 //}
 
 // 优化.2
-int  main()
-{
-	int i = 0;
-	for (i = 101; i <= 200; i+=2)
-	{
-		int flag = 1;
-		int a = 0;
-		// for (a = 2; a < i; a++)
-		for (a = 2; a <= sqrt(i); a++) 
-		{
-			if (i % a == 0) //如果判断语句结果为真，则执行语句
-			{
-				flag = 0;
-				break;  //打断并跳出循环
-			}
-		}
-		if (flag == 1)
-		{
-			printf("%d ", i);
-		}
-	}
+//int  main()
+//{
+//	int i = 0;
+//	int count = 0;
+//	for (i = 101; i <= 200; i += 2)
+//	{
+//		int flag = 1;
+//		int a = 0;
+//		// for (a = 2; a < i; a++)
+//		for (a = 3; a <= sqrt(i); a += 2)
+//			//sqrt( i ): i 的平方根, 因为一个数的乘数永远有一个小于它的平方根，所以 a 恒定小于等于 sqrt(i)
+//			// 假设 i=16，16 = 4 * 4 ,两个乘数总会有一个小于等于4 (即 sqrt ( 16 ))16的平方根
+//		{
+//			if (i % a == 0) //如果判断语句结果为真，则执行语句
+//			{
+//				flag = 0;
+//				break;  //打断并跳出循环
+//			}
+//		}
+//		if (flag == 1)
+//		{
+//			count++;
+//			printf("%d ", i);
+//		}
+//
+//	}
+//	printf("\ncount = %d", count);
+//
+//	return 0;
+//}
 
-	return 0;
-}
+
+// goto 函数
+//int main()
+//{
+//	printf("hehe\n");
+//	if (1)
+//		goto end;
+//	printf("haha\n");
+//end:
+//	printf("昵好——");
+//	return 0;
+//}
+
+////
+//关机程序
+//1. 程序运行起来的时候，就开始倒计时60秒关机
+//2. 但是如果你输入：我是猪，就取消关机
+//
+//system -- 库函数，可以执行系统命令
+
+//int main()
+//{
+//	char input[20] = { 0 };
+//	system("shutdown -s -t 120");
+//	printf("请注意，你的电脑在2分钟内关机，如果输入我是猪，就取消关机\n");
+//again:
+//	scanf("%s", input);
+//	if (strcmp("我是猪", input) == 0)
+//	{
+//		printf("输入正确, 取消关机");
+//		system("shutdown -a");
+//	}
+//	else
+//	{
+//		printf("输入错误\n");
+//		goto again;
+//	}
+//	return 0;
+//}
