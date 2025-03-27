@@ -1,6 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 
 // 数组在内存中是连续存放的
@@ -26,55 +27,102 @@
 //	return 0;
 //}
 
-
-//求 10 个整数中最大值
+// 数组初始化
 //int main()
 //{
-//	int arr[10];
-//	int i = 0;
-//	int max = 0;
-//	int Array_length = sizeof(arr) / sizeof(arr[0]);
-//	for (i = 0; i < 10; i++)
-//	{
-//		scanf("%d", &arr[i]);
-//		if (arr[i] > max)
-//		{
-//			max = arr[i];
-//		}
-//	}
-//	printf("%d", max);
+//	float arr[10] = { 0 };
+//	int data0[3][5];
+//	int data1[3][5] = { 1, 2, 3, 4, 5, 6, 7, };// 不完全初始化
+//	int data2[3][5] = { 0 };//不完全初始化
+//	int data3[3][5] = { 1,2,3,4,5, 2,3,4,5,6, 3,4,5,6,7 };//完全初始化
+//	int data4[3][5] = { {1,2}, {3,4}, {5,6} };//按组初始化
+//	int data5[][5] = {1,2,3,4,5,6,7,8};
+//	int data6[][5] = { {1,2}, {3,4}, {5,6,7} };
+//
 //	return 0;
 //}
 
-
-// 计算1/1 - 1/2 + 1/3 - 1/4 + 1/5 …… + 1/99 - 1/100 的值，打印出结果
+//数组下标
 //int main()
 //{
-//	double sum = 0;
-//	int i = 0;
-//	for (i = 1; i <= 100; i++)
-//	{
-//		if (i % 2 == 0) // i == 偶数
-//		{
-//			sum = sum - 1.0 / i;
-//		}
-//		else            // i == 奇数
-//		{
-//			sum = sum + 1.0 / i;
-//		}
-//		
-//	}
-//	printf("%lf", sum);
+//	int arr[3][5] = { 1,2,3,4,5, 2,3,4,5,6, 3,4,5,6,7 };
+//	printf("%d", arr[1][2]);// 下标从0开始
+//
 //	return 0;
 //}
 
-//编写程序数一下 1到 100 的所有整数中出现多少个数字9
+//输入和输出
+//int main()
+//{
+//	int arr[3][5] = { 0 };
+//	int i = 0;
+//	for (i = 0; i < 3; i++)
+//	{
+//		int j = 0;
+//		for ( j = 0; j < 5; j++)
+//		{
+//			scanf("%d", &arr[i][j]);
+//		}
+//	}
+//	for (i = 0; i < 3; i++)
+//	{
+//		int j = 0;
+//		for (j = 0; j < 5; j++)
+//		{
+//			printf("%d ", arr[i][j]);
+//		}
+//	}
+//	return 0;
+//}
+
+//int main()
+//{
+//	char arr1[] = "hello bit!!!!!!!!!";
+//	char arr2[] = "##################";
+//	int left = 0;
+//	int right = strlen(arr1) - 1; 
+//
+//	while (left <= right)
+//	{
+//		arr2[left] = arr1[left];
+//		arr2[right] = arr1[right];
+//		printf("%s\n", arr2);
+//		Sleep(10);
+//		system("cls");
+//		left++;
+//		right--;
+//	}
+//	printf("%s\n", arr2);
+//
+//	return 0;
+//}
+
+//二分查找
 int main()
 {
-	int i = 9;
-	int amount = 100 / i;
-	printf("%d", amount);
+	int arr[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}; 
+	int k = 0;
+	int sz = sizeof(arr) / sizeof(arr[0]);
+	int left = 0;
+	int right = sz - 1;
+	scanf("%d", &k);
+
+	while (left <= right)
+	{
+		int mid = (left + right) / 2;
+		if (k > arr[mid])//当K大于中值
+		{
+			left = mid + 1; //左边界 变为 mid + 1
+		}
+		else if (k < arr[mid])
+		{
+			right = mid - 1;
+		}
+		else
+		{
+			printf("下标是%d\n", mid);
+			break;
+		}
+	}
 	return 0;
 }
-
-//打印1000年到2000年之间的闰年

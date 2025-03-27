@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Class_4.c">
+    <ClCompile Include="Class_4_For.c">
       <Filter>Resource Files</Filter>
     </ClCompile>
   </ItemGroup>
