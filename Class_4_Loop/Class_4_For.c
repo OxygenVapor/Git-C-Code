@@ -3,91 +3,74 @@
 #include <stdlib.h>
 
 // 猜数字小游戏
- 
 
-
+//static void menu()
+//{
+//	printf("-----------------------------------------\n");
+//	printf("------------     1. play     ------------\n");
+//	printf("------------     0. exit     ------------\n");
+//	printf("-----------------------------------------\n");
+//}
+//
+//static void game()
+//{
+//	int random = rand() % 100 + 1;
+//	int sum = 0;
+//	int count = 5;
+//	while (count)
+//	{
+//		printf("请输入你的数字: ");
+//		scanf("%d", &sum);
+//		if (sum < random)
+//		{
+//			printf(" 猜小了 \n");
+//		}
+//		else if (sum > random)
+//		{
+//			printf(" 猜大了 \n");
+//		}
+//		else if (sum == random)
+//		{
+//			printf("%d = %d, 你猜对了！！\n", sum, random);
+//			break;
+//		}
+//		count--;
+//		printf("还有 %d 次机会\n", count);
+//	}
+//	if (count == 0)
+//	{
+//		printf("机会已用完，你输了！！\n");
+//		printf("正确的值是 %d\n", random);
+//	}
+//}
+//
 //int main()
 //{
-//	int i = 0;
-//	int num = 0;
+//	int input = 0;
 //	srand((unsigned int)time(NULL));
-//	int i = rand() % 100 + 1;
-//	scanf("%d", &num);
-//	if (num == i)
+//	//打印菜单
+//	printf("***************** 猜数字 ****************\n");
+//	do
 //	{
-//		printf("%d = %d，你猜对了！！", num, i);
-//	}
-//	printf("%d != %d，你猜错了！！", num, i);
+//		menu();
+//		printf("请选择：");
+//		scanf("%d", &input);
+//		switch (input)
+//		{
+//		case 1:
+//			game();
+//			break;
+//		case 0:
+//			printf("退出游戏\n");
+//			break;
+//		default:
+//			printf("输入错误，重新选择\n");
+//			break;
+//		}
+//	} while (input);
+//
 //	return 0;
 //}
-
-static void menu()
-{
-	printf("-----------------------------------------\n");
-	printf("------------     1. play     ------------\n");
-	printf("------------     0. exit     ------------\n");
-	printf("-----------------------------------------\n");
-}
-
-static void game()
-{
-	int random = rand() % 100 + 1;
-	int sum = 0;
-	int count = 5;
-	while (count)
-	{
-		printf("请输入你的数字: ");
-		scanf("%d", &sum);
-		if (sum < random)
-		{
-			printf(" 猜小了 \n");
-		}
-		else if (sum > random)
-		{
-			printf(" 猜大了 \n");
-		}
-		else if (sum == random)
-		{
-			printf("%d = %d, 你猜对了！！\n", sum, random);
-			break;
-		}
-		count--;
-		printf("还有 %d 次机会\n", count);
-	}
-	if (count == 0)
-	{
-		printf("机会已用完，你输了！！\n");
-		printf("正确的值是 %d\n", random);
-	}
-}
-
-int main()
-{
-	int input = 0;
-	srand((unsigned int)time(NULL));
-	//打印菜单
-	printf("***************** 猜数字 ****************\n");
-	do
-	{
-		menu();
-		printf("请选择：");
-		scanf("%d", &input);
-		switch (input)
-		{
-		case 1:
-			game();
-			break;
-		case 0:
-			printf("退出游戏\n");
-			break;
-		default:
-			printf("输入错误，重新选择\n");
-			break;
-		}
-	} while (input);
-
-	return 0;
-}
 
 //求 10 个整数中最大值
 //int main()
@@ -216,3 +199,75 @@ int main()
 //	}
 //	return 0;
 //}
+
+
+
+
+// 作业
+//int main()
+//{
+//	char x[] = "abcdefg ";
+//	char y[] = {'a', 'b', 'c', 'd', 'e', 'f', 'g'};
+//	int arr[] = {1,2,(3,4),5};
+//	int x_len = strlen(x);
+//	int y_len = strlen(y);
+//	int x_size = sizeof(x);
+//	int y_size = sizeof(y);
+//	printf("%d",sizeof(arr));
+//	printf("x_len = %d, x_size = %d\ny_len = %d, y_size = %d", x_len, x_size,y_len, y_size);
+//	return 0;
+//}
+
+//BC51 三角形判断
+//int main() {
+//    int a, b, c;
+//    int flag = 0;
+//    while (scanf("%d %d %d", &a, &b, &c) != EOF) {
+//        if ((a + b > c) && (a + c > b) && (b + c > a) && (a - b < c) && (a - c < b) &&
+//            (b - c < a)) {
+//            if ((a == b) && (b == c)) {
+//                printf("Equilateral triangle!\n");
+//                flag = 1;
+//            }
+//            else if ((a == b && a != c && b != c) || (a == c && a != b && c != b) ||
+//                (b == c && b != a && c != a)) {
+//                printf("Isosceles triangle!\n");
+//                flag = 1;
+//            }
+//            else {
+//                printf("Ordinary triangle!\n");
+//                flag = 1;
+//            }
+//        }
+//        if (flag == 0) {
+//            printf("Not a triangle!\n");
+//        }
+//    }
+//    return 0;
+//}
+
+//打印乘法口诀表
+int main() {
+	int a = 0;
+	int b = 0;
+	int sum = 0;
+	while (1) {
+		int x = 0;
+		for (x = 1; x <= 9; x++)
+		{
+			a = x;
+			int y = 0;
+			for (y = 1; y <= 9; y++)
+			{
+				b = y;
+				if (a <= b)
+				{
+					sum = a * b;
+					printf("%d x %d = %d\n", a, b, sum);
+				}
+			}
+		}
+		break;
+	}
+	return 0;
+}

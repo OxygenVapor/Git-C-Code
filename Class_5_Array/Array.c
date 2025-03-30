@@ -97,32 +97,37 @@
 //	return 0;
 //}
 
-//二分查找
-int main()
-{
-	int arr[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}; 
-	int k = 0;
-	int sz = sizeof(arr) / sizeof(arr[0]);
-	int left = 0;
-	int right = sz - 1;
-	scanf("%d", &k);
-
-	while (left <= right)
-	{
-		int mid = (left + right) / 2;
-		if (k > arr[mid])//当K大于中值
-		{
-			left = mid + 1; //左边界 变为 mid + 1
-		}
-		else if (k < arr[mid])
-		{
-			right = mid - 1;
-		}
-		else
-		{
-			printf("下标是%d\n", mid);
-			break;
-		}
-	}
-	return 0;
-}
+//二分查找//
+//int main()
+//{
+//	int arr[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}; 
+//	int k = 0;
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//	int left = 0;
+//	int right = sz - 1;
+//	scanf("%d", &k);
+//
+//	while (left <= right)
+//	{
+//		//int mid = (left + right) / 2;
+//		int mid = left + (right - left) / 2; //避免大数溢出计算错误
+//		if (k > arr[mid])//当K大于中值
+//		{
+//			left = mid + 1; //左边界 变为 mid + 1
+//		}
+//		else if (k < arr[mid])
+//		{
+//			right = mid - 1;
+//		}
+//		else
+//		{
+//			printf("下标是%d\n", mid);
+//			break;
+//		}
+//	}
+//	if (left > right)
+//	{
+//		printf("找不到 %d", k);
+//	}
+//	return 0;
+//}
