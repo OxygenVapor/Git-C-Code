@@ -247,27 +247,92 @@
 //}
 
 //打印乘法口诀表
-int main() {
-	int a = 0;
-	int b = 0;
-	int sum = 0;
-	while (1) {
-		int x = 0;
-		for (x = 1; x <= 9; x++)
+//int main() {
+//	int a = 0;
+//	int b = 0;
+//	int sum = 0;
+//	while (1) {
+//		int x = 0;
+//		for (x = 1; x <= 9; x++)
+//		{
+//			a = x;
+//			int y = 0;
+//			for (y = 1; y <= 9; y++)
+//			{
+//				b = y;
+//				if (a <= b)
+//				{
+//					sum = a * b;
+//					printf("%d x %d = %d\n", a, b, sum);
+//				}
+//			}
+//		}
+//		break;
+//	}
+//	return 0;
+//}
+
+
+// 打印100~200之间的素数
+// 质数又称素数。一个大于1的自然数，除了1和它自身外，不能被其他自然数整除的数叫做质数
+#include <math.h>
+
+int main()
+{
+	int i = 0;
+	int count = 0;
+	for (i = 101; i < 200; i += 2)// 偶数不可能是素数，可以排除掉偶数的情况
+	{
+		int flag = 1;
+		int j = 0;
+		for (j = 3; j <= sqrt(i); j += 2)
+		//此循环意义在于判断 i 能否被 非i 的整数整除
+		//因为奇数不能被偶数整除，所以可以排除掉偶数作为除数的情况
+		//又因为 i 的除数必定有一个除数大于等于它的平方根，所以可以排除掉两个数同时大于 i 的情况
 		{
-			a = x;
-			int y = 0;
-			for (y = 1; y <= 9; y++)
+			if (i % j == 0)
 			{
-				b = y;
-				if (a <= b)
-				{
-					sum = a * b;
-					printf("%d x %d = %d\n", a, b, sum);
-				}
+				flag = 0;
+				break;
 			}
 		}
-		break;
+		if (flag == 1)
+		{
+			count++;
+			printf("%d\n", i);
+		}
 	}
+	printf("\n%d", count);
 	return 0;
 }
+
+//int  main()
+//{
+//	int i = 0;
+//	int count = 0;
+//	for (i = 101; i <= 200; i += 2)
+//	{
+//		int flag = 1;
+//		int a = 0;
+//		// for (a = 2; a < i; a++)
+//		for (a = 3; a <= sqrt(i); a += 2)
+//			//sqrt( i ): i 的平方根, 因为一个数的乘数永远有一个小于等于它的平方根，所以 a 恒定小于等于 sqrt(i)
+//			// 假设 i=16，16 = 4 * 4 ,两个乘数总会有一个小于等于4 (即 sqrt ( 16 ))16的平方根
+//		{
+//			if (i % a == 0) //如果判断语句结果为真，则执行语句
+//			{
+//				flag = 0;
+//				break;  //打断并跳出循环
+//			}
+//		}
+//		if (flag == 1)
+//		{
+//			count++;
+//			printf("%d ", i);
+//		}
+//
+//	}
+//	printf("\ncount = %d", count);
+//
+//	return 0;
+//}

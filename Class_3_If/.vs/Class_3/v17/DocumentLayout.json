@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Workspace\\C\\Files\\Git-C-Code\\Class_3\\",
+  "WorkspaceRootPath": "D:\\Workspace\\C\\Files\\Git-C-Code\\Class_3_If\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3A69FAC0-4292-41EA-ACAA-218FF546D891}|Class_3.vcxproj|D:\\Workspace\\C\\Files\\Git-C-Code\\Class_3\\Class_3_if.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{3A69FAC0-4292-41EA-ACAA-218FF546D891}|Class_3.vcxproj|D:\\Workspace\\C\\Files\\Git-C-Code\\Class_3_If\\Class_3_if.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{3A69FAC0-4292-41EA-ACAA-218FF546D891}|Class_3.vcxproj|solutionrelative:Class_3_if.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -24,11 +24,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Class_3_if.c",
-              "DocumentMoniker": "D:\\Workspace\\C\\Files\\Git-C-Code\\Class_3\\Class_3_if.c",
+              "DocumentMoniker": "D:\\Workspace\\C\\Files\\Git-C-Code\\Class_3_If\\Class_3_if.c",
               "RelativeDocumentMoniker": "Class_3_if.c",
-              "ToolTip": "D:\\Workspace\\C\\Files\\Git-C-Code\\Class_3\\Class_3_if.c",
+              "ToolTip": "D:\\Workspace\\C\\Files\\Git-C-Code\\Class_3_If\\Class_3_if.c",
               "RelativeToolTip": "Class_3_if.c",
-              "ViewState": "AgIAAFwBAAAAAAAAAAAAAHEBAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAACsBAAAAAAAAAAAAAC4BAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2025-03-16T23:03:02.341Z",
               "EditorCaption": ""
