@@ -5,6 +5,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{F685A4E0-DB92-4C69-B566-3F4BBADE52F3}|Class_6_Function.vcxproj|D:\\Workspace\\C\\Files\\Git-C-Code\\Class_6_Function\\Class_6_Funtion.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{F685A4E0-DB92-4C69-B566-3F4BBADE52F3}|Class_6_Function.vcxproj|solutionrelative:Class_6_Funtion.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F685A4E0-DB92-4C69-B566-3F4BBADE52F3}|Class_6_Function.vcxproj|D:\\Workspace\\C\\Files\\Git-C-Code\\Class_6_Function\\Class_6_Function.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F685A4E0-DB92-4C69-B566-3F4BBADE52F3}|Class_6_Function.vcxproj|solutionrelative:Class_6_Function.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -13,12 +17,25 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "DockedWidth": 292,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Class_6_Function.h",
+              "DocumentMoniker": "D:\\Workspace\\C\\Files\\Git-C-Code\\Class_6_Function\\Class_6_Function.h",
+              "RelativeDocumentMoniker": "Class_6_Function.h",
+              "ToolTip": "D:\\Workspace\\C\\Files\\Git-C-Code\\Class_6_Function\\Class_6_Function.h",
+              "RelativeToolTip": "Class_6_Function.h",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-02T08:02:52.768Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -28,9 +45,9 @@
               "RelativeDocumentMoniker": "Class_6_Funtion.c",
               "ToolTip": "D:\\Workspace\\C\\Files\\Git-C-Code\\Class_6_Function\\Class_6_Funtion.c",
               "RelativeToolTip": "Class_6_Funtion.c",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAAAFwAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAPEAAAAAAAAAAAAuwPwAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-03-30T23:50:34.969Z",
+              "WhenOpened": "2025-04-02T00:56:22.809Z",
               "EditorCaption": ""
             }
           ]

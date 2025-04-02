@@ -1,5 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include <stdio.h>
+#include <math.h>
 
 //int Add(int x, int y)
 //{
@@ -38,25 +39,7 @@
 //	return 0;
 //}
 
-//输入数组的数值
-int set_Arr(int x[10], int y, int z)
-{
-	for (int i = 0; i < y; i++)
-	{
-		x[i] = z;
-	}
-}
-
 //打印数组
-void print_Arr(int x[10], int y)
-{
-	for (int i = 0; i < y; i++)
-	{
-		printf("%d ", x[i]);
-	}
-	printf("\n");
-}
-
 //int main()
 //{
 //	int arr[10] = { 1,2,3,4,5,6,7,8,9,10 };
@@ -68,17 +51,6 @@ void print_Arr(int x[10], int y)
 //}
 
 //打印二维数组
-void print_Arr_2d(int arr[3][5], int row, int column)
-{
-	for (int i = 0; i < row; i++)
-	{
-		for (int j = 0; j < column; j++)
-		{
-			printf("%d ", arr[i][j]);
-		}
-		printf("\n");
-	}
-}
 //int main()
 //{
 //	int arr[3][5] = { 1,2,3,4,5, 6,7,8,9,10, 11,12,13,14,15 };
@@ -87,39 +59,207 @@ void print_Arr_2d(int arr[3][5], int row, int column)
 //	return 0;
 //}
 
-int Leap_year(int year)
+//计算闰年
+//int main()
+//{
+//	int year = 0;
+//	int month = 0;
+//	scanf("%d%d", &year, &month);
+//	int day = get_day_of_month(year, month);
+//	printf("%d 年 %d 月有 %d 天\n", year, month, day);
+//	return 0;
+//}
+
+//链式访问
+//int main()
+//{
+//	printf("%d", printf("%d", printf("%d", 43)));//printf的返回值是打印字符的个数
+//	//43 2 1
+//	return 0;
+//}
+
+
+//作业
+
+//写一个二分查找函数
+//功能：在一个升序数组中查找指定的数值，找到了就返回下标，找不到就返回 - 1.
+//int bin_search(int arr[],int left, int right, int key)
+//{
+//	while (left <= right)
+//	{
+//		int mid = left + (right - left) / 2;
+//		if (key > arr[mid])
+//		{
+//			left = mid + 1; 
+//		}
+//		else if (key < arr[mid])
+//		{
+//			right = mid - 1;
+//		}
+//		else
+//		{
+//			return mid;
+//		}
+//	}
+//	if (left > right)
+//	{
+//		return -1;
+//	}
+//}
+//
+//int main()
+//{
+//	int arr[] = { 1,2,3,4,5,6,7,8,9,10 };
+//	int size = sizeof(arr) / sizeof(arr[0]);
+//	int left = 0;
+//	int right = size - 1;
+//	int key = 0;
+//	scanf("%d", &key);
+//	int subscript = bin_search(arr, left, right, key);
+//	printf("%d", subscript);
+//	return 0;
+//}
+
+
+//实现一个函数，打印乘法口诀表，口诀表的行数和列数自己指定
+//如：输入9，输出9 * 9口诀表，输出12，输出12 * 12的乘法口诀表。
+//void Multiplication(int x)
+//{
+//	int count = 1;
+//	for (int i = 1; i <= 9; i++)
+//	{
+//		for (int j = i; j <= 9; j++)
+//		{
+//			if (j < i)
+//			{
+//				continue;
+//			}
+//			if (count > x)
+//			{
+//				printf("\n");
+//				count = 1;
+//			}
+//			printf("%d x %d = %d ", i, j, i * j);
+//			count++;
+//		}
+//
+//	}
+//}
+//
+//int main()
+//{
+//	int x = 0;
+//	scanf("%d", &x);
+//	Multiplication(x);
+//}
+
+//判断闰年
+//void is_leap_year(int year)
+//{
+//	if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
+//	{
+//		printf("%d 是闰年", year);
+//	}
+//	else
+//	{
+//		printf("%d 不是闰年", year);
+//	}
+//}
+//
+//int main()
+//{
+//	int year = 0;
+//	scanf("%d", &year);
+//	is_leap_year(year);
+//
+//	return 0;
+//}
+
+//实现一个函数is_prime，判断一个数是不是素数。
+//利用上面实现的is_prime函数，打印100到200之间的素数。
+
+//int is_prime(int min,int max)
+//{
+//	int count = 0;
+//	for (int i = min + 1; i < max; i += 2)
+//	{
+//		int flag = 1;
+//		int j = 0;
+//		for (j = 3; j <= sqrt(i); j += 2)
+//		{
+//			if (i % j == 0)
+//			{
+//				flag = 0;
+//				break;
+//			}
+//		}
+//		if (flag == 1)
+//		{
+//			count++;
+//			printf("%d\n", i);
+//		}
+//	}
+//	printf("%d ", count);
+//
+//}
+//
+//int main()
+//{
+//	int min = 100;
+//	int max = 200;
+//	is_prime(min, max);
+//	return 0;
+//}
+
+//创建一个整形数组，完成对数组的操作
+//
+//实现函数init() 初始化数组为全0
+//实现print()  打印数组的每个元素
+//实现reverse()  函数完成数组元素的逆置。
+//要求：自己设计以上函数的参数，返回值。
+void init(int arr1[10],int size)
 {
-	if ((year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0))
+	for (int i = 0; i < size; i++)
 	{
-		return 1;
-	}
-	else
-	{
-		return 0;
+		arr1[i] = 0;
 	}
 }
 
-int get_day_of_month(int year, int month)
+void print_arr(int arr[10], int size)
 {
-	int m[13] = { 0, 31,28,31,30,31,30,31,31,30,31,30,31 };
-	int leap = Leap_year(year);
-	if (leap == 1)
+	for (int i = 0; i < size; i++)
 	{
-		m[2] = 29;
-		return m[month];
+		printf("%d ", arr[i]);
 	}
-	else
+	printf("\n");
+}
+
+void reverse(int arr[10], int size)
+{
+	int temp = 0;
+	int arr_t[10] = {0};
+	for (int i = 0; i < size; i++)
 	{
-		return m[month];
+		arr_t[i] = arr[i];
+	}
+	while (1)
+	{
+		for (int x = size - 1; x >= 0; x--)
+		{
+			arr[temp] = arr_t[x];
+			temp++;
+		}
+		break;
 	}
 }
 
 int main()
 {
-	int year = 0;
-	int month = 0;
-	scanf("%d%d", &year, &month);
-	int day = get_day_of_month(year, month);
-	printf("%d 年 %d 月有 %d 天\n", year, month, day);
+	int arr1[10] = { 1,2,3,4,5,6,7,8,9,10 };
+	int size = sizeof(arr1) / sizeof(arr1[0]);
+	//init(arr1, size);
+	print_arr(arr1, size);
+	reverse(arr1, size);
+	print_arr(arr1, size);
 	return 0;
 }

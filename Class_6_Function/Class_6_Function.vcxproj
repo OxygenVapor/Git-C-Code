@@ -129,6 +129,9 @@
   <ItemGroup>
     <ClCompile Include="Class_6_Funtion.c" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Class_6_Function.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
