@@ -217,49 +217,14 @@
 //实现print()  打印数组的每个元素
 //实现reverse()  函数完成数组元素的逆置。
 //要求：自己设计以上函数的参数，返回值。
-void init(int arr1[10],int size)
-{
-	for (int i = 0; i < size; i++)
-	{
-		arr1[i] = 0;
-	}
-}
 
-void print_arr(int arr[10], int size)
-{
-	for (int i = 0; i < size; i++)
-	{
-		printf("%d ", arr[i]);
-	}
-	printf("\n");
-}
-
-void reverse(int arr[10], int size)
-{
-	int temp = 0;
-	int arr_t[10] = {0};
-	for (int i = 0; i < size; i++)
-	{
-		arr_t[i] = arr[i];
-	}
-	while (1)
-	{
-		for (int x = size - 1; x >= 0; x--)
-		{
-			arr[temp] = arr_t[x];
-			temp++;
-		}
-		break;
-	}
-}
-
-int main()
-{
-	int arr1[10] = { 1,2,3,4,5,6,7,8,9,10 };
-	int size = sizeof(arr1) / sizeof(arr1[0]);
-	//init(arr1, size);
-	print_arr(arr1, size);
-	reverse(arr1, size);
-	print_arr(arr1, size);
-	return 0;
-}
+//int main()
+//{
+//	int arr1[10] = { 1,2,3,4,5,6,7,8,9,10 };
+//	int size = sizeof(arr1) / sizeof(arr1[0]);
+//	//init(arr1, size);
+//	print_arr(arr1, size);
+//	reverse(arr1, size);
+//	print_arr(arr1, size);
+//	return 0;
+//}

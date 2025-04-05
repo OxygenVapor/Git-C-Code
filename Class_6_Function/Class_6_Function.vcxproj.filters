@@ -18,6 +18,9 @@
     <ClCompile Include="Class_6_Funtion.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Minesweeper.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Class_6_Function.h">
