@@ -1,17 +1,14 @@
-#define _CRT_SECURE_NO_WARNNINGS 1
+#define _CRT_SECURE_NO_WARNINGS 1
 #include <stdio.h>
 
-void test() {
-	static int a = 0;
-	a++;
-	printf("%d ", a);
-}
 
-int main() {
-	int i = 0;
-	for (i = 0; i < 5; i++)
-	{
-		test();
-	}
-	return 0;
-}
+
+
+#define _CRT_SECURE_NO_WARNINGS 1
+#include <stdio.h>
+#include <string.h>
+
+// int main() {
+	
+// 	return 0;
+// }
