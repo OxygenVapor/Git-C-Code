@@ -3,6 +3,8 @@
 #include <stdlib.h>
 #include <time.h>
 
+#include "Minesweeper.h"
+
 
 
 void menu() 
@@ -12,12 +14,21 @@ void menu()
 	printf("++++++++++++++++++++++++++\n");
 }
 
+
+
 void game()
 {
-	int mine_size[11][11] = { 0 };
-	int mine_sum[11][11] = { 0 };
-	time_t t;
-	srand((unsigned) time(&t));
+	char mine[ROWS][COLS];//存放雷的信息
+	char show[ROWS][COLS];//存放排查出的雷的信息
+	//初始化棋盘
+	Init_Board(mine, ROWS, COLS, '0');
+	//Display_Board(mine, ROW, COL);
+	Init_Board(show, ROWS, COLS, '*');
+	//Display_Board(show, ROW, COL);
+	//布置雷
+	Set_Mine(mine);
+	Display_Board(mine, ROW, COL);
+
 }
 
 void test()
@@ -36,6 +47,7 @@ void test()
 		case 1: 
 		{
 			printf("开始游戏\n");
+			game();
 			break;
 		}
 		default:
@@ -49,5 +61,6 @@ int main()
 {
 	char str[] = {0};
 	test();
+	
 	return 0;
 }
