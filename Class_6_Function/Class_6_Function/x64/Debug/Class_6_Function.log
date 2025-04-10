@@ -1,2 +1,5 @@
 ﻿  Test.c
+D:\Workspace\C\Files\Git-C-Code\Class_6_Function\Minesweeper.h(108,5): warning C4013: “main”未定义；假设外部返回 int
+  (编译源文件“Test.c”)
+  
   Class_6_Function.vcxproj -> D:\Workspace\C\Files\Git-C-Code\Class_6_Function\x64\Debug\Class_6_Function.exe
