@@ -4,7 +4,7 @@
 #define COL 9
 #define ROWS ROW+2
 #define COLS COL+2
-#define MINE 10
+#define MINE 80
 
 void menu()
 {
@@ -72,7 +72,7 @@ void Set_Mine(char Array[ROWS][COLS])
 void Find_Mine(char mine[ROWS][COLS], char show[ROWS][COLS], int row, int col)
 {
 	int count = 0;
-	int max_count = ROW * COL - 10;
+	int max_count = ROW * COL - MINE;
 	int x, y;
 	while (count < max_count)
 	{
@@ -116,4 +116,6 @@ void Find_Mine(char mine[ROWS][COLS], char show[ROWS][COLS], int row, int col)
 			printf("输入坐标有误，请重新输入");
 		}
 	}
+	printf("恭喜你排除了所有雷！！\n");
+	Display_Board(mine, ROW, COL);
 }
