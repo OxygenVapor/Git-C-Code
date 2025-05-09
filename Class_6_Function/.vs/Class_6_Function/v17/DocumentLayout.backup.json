@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\Workspace\\C\\Files\\Git-C-Code\\Class_6_Function\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F685A4E0-DB92-4C69-B566-3F4BBADE52F3}|Class_6_Function.vcxproj|D:\\Workspace\\C\\Files\\Git-C-Code\\Class_6_Function\\Test.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F685A4E0-DB92-4C69-B566-3F4BBADE52F3}|Class_6_Function.vcxproj|solutionrelative:Test.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F685A4E0-DB92-4C69-B566-3F4BBADE52F3}|Class_6_Function.vcxproj|D:\\Workspace\\C\\Files\\Git-C-Code\\Class_6_Function\\Minesweeper.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{F685A4E0-DB92-4C69-B566-3F4BBADE52F3}|Class_6_Function.vcxproj|solutionrelative:Minesweeper.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F685A4E0-DB92-4C69-B566-3F4BBADE52F3}|Class_6_Function.vcxproj|D:\\Workspace\\C\\Files\\Git-C-Code\\Class_6_Function\\Test.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F685A4E0-DB92-4C69-B566-3F4BBADE52F3}|Class_6_Function.vcxproj|solutionrelative:Test.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F685A4E0-DB92-4C69-B566-3F4BBADE52F3}|Class_6_Function.vcxproj|D:\\Workspace\\C\\Files\\Git-C-Code\\Class_6_Function\\Minesweeper.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -42,13 +42,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Minesweeper.h",
               "DocumentMoniker": "D:\\Workspace\\C\\Files\\Git-C-Code\\Class_6_Function\\Minesweeper.h",
               "RelativeDocumentMoniker": "Minesweeper.h",
               "ToolTip": "D:\\Workspace\\C\\Files\\Git-C-Code\\Class_6_Function\\Minesweeper.h",
               "RelativeToolTip": "Minesweeper.h",
-              "ViewState": "AgIAAGQAAAAAAAAAAAAAAHcAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAADEAAAAAAAAAAAAwwDsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-04-07T22:39:02.255Z",
               "EditorCaption": ""
@@ -61,13 +61,13 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Test.c",
               "DocumentMoniker": "D:\\Workspace\\C\\Files\\Git-C-Code\\Class_6_Function\\Test.c",
               "RelativeDocumentMoniker": "Test.c",
               "ToolTip": "D:\\Workspace\\C\\Files\\Git-C-Code\\Class_6_Function\\Test.c",
               "RelativeToolTip": "Test.c",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAWwBIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2025-04-07T22:41:26.934Z",
               "EditorCaption": ""
