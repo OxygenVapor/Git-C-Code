@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Test.c" />
     <ClCompile Include="What_is_Recursive_Function.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
