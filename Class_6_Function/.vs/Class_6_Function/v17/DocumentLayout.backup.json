@@ -22,12 +22,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 364,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -48,7 +44,7 @@
               "RelativeDocumentMoniker": "Minesweeper.h",
               "ToolTip": "D:\\Workspace\\C\\Files\\Git-C-Code\\Class_6_Function\\Minesweeper.h",
               "RelativeToolTip": "Minesweeper.h",
-              "ViewState": "AgIAADEAAAAAAAAAAAAwwDsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-04-07T22:39:02.255Z",
               "EditorCaption": ""
@@ -67,7 +63,7 @@
               "RelativeDocumentMoniker": "Test.c",
               "ToolTip": "D:\\Workspace\\C\\Files\\Git-C-Code\\Class_6_Function\\Test.c",
               "RelativeToolTip": "Test.c",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAWwBIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2025-04-07T22:41:26.934Z",
               "EditorCaption": ""
