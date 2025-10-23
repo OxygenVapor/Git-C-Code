@@ -187,13 +187,57 @@ void Prints(int n)
 	}
 	printf("%d ", n % 10);
 }
-int main()
-{
-	int n = 0;
-	while (scanf("%d", &n) == 1)
-	{
-		Prints(n);
-		printf("\n");
+// int main()
+// {
+// 	int n = 0;
+// 	while (scanf("%d", &n) == 1)
+// 	{
+// 		Prints(n);
+// 		printf("\n");
+// 	}
+// 	return 0;
+// }
+
+//int count = 0;
+int Fib2(int n) {
+	if (n == 3)
+//		count++;
+	if (n <= 2)
+		return 1;
+	else
+		return Fib2(n-1) + Fib2(n-2);
+}
+
+// int main() {
+// 	int n = 0;
+// 	scanf("%d", &n);
+// 	int r = Fib2(n);
+// 	printf("%d\n", r);
+// 	printf("%d\n", count);
+// 	return 0;
+// }
+
+
+long long Fib3(long long n) {
+	if (n == 1)
+		return 1;
+	if (n == 2)
+		return 2;
+
+	long long a = 1, b = 1, c = 0;
+	while (n > 2) {
+		c = a + b;
+		a = b;
+		b = c;
+		n--;
 	}
+	return c;
+}
+
+int main() {
+	long long n = 0;
+	scanf("%lld", &n);
+	long long r = Fib3(n);
+	printf("%lld\n", r);
 	return 0;
 }
