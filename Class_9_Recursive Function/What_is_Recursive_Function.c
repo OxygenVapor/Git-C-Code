@@ -4,7 +4,7 @@
 
 //递归：递推-回归
 //
-Fact(int n)
+int Fact(int n)
 {
 	if (n == 0)
 	{

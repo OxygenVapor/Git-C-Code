@@ -1,13 +1,11 @@
 cmake_minimum_required(VERSION 3.20)
-project(Class_4 CXX)
-set(CMAKE_CXX_STANDARD 17)
+project(Class_4 C)
+set(CMAKE_C_STANDARD 99)
 
+# 自动递归包含所有源文件（含子文件夹）
 file(GLOB_RECURSE SRC_FILES
-    "None"
-    "None"
-    "None"
-    "None"
-    "Class_4_For.c"
+    "*.c"
+    "*.cpp"
 )
 
 add_executable(Class_4 ${SRC_FILES})

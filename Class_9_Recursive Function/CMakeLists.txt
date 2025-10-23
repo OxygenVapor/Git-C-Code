@@ -1,14 +1,11 @@
 cmake_minimum_required(VERSION 3.20)
-project(Class_9_Recursive Function CXX)
-set(CMAKE_CXX_STANDARD 17)
+project(Class_9_Recursive_Function C)
+set(CMAKE_C_STANDARD 99)
 
+# 自动递归包含所有源文件（含子文件夹）
 file(GLOB_RECURSE SRC_FILES
-    "Test.c"
-    "What_is_Recursive_Function.c"
-    "None"
-    "None"
-    "None"
-    "None"
+    "*.c"
+    "*.cpp"
 )
 
-add_executable(Class_9_Recursive Function ${SRC_FILES})
+add_executable(Class_9_Recursive_Function ${SRC_FILES})

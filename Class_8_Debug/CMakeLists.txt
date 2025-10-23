@@ -1,13 +1,11 @@
 cmake_minimum_required(VERSION 3.20)
-project(Class_8_Debug CXX)
-set(CMAKE_CXX_STANDARD 17)
+project(Class_8_Debug C)
+set(CMAKE_C_STANDARD 99)
 
+# 自动递归包含所有源文件（含子文件夹）
 file(GLOB_RECURSE SRC_FILES
-    "None"
-    "None"
-    "None"
-    "None"
-    "Debug.c"
+    "*.c"
+    "*.cpp"
 )
 
 add_executable(Class_8_Debug ${SRC_FILES})
